@@ -77,3 +77,13 @@ This project can be extended by:
 - Implementing hyperparameter tuning for the Random Forest model or experimenting with advanced models like Gradient Boosting or XGBoost.
 
 Feel free to explore the dataset, modify the notebook, and contribute improvements!
+
+## How to Interpret Results
+
+The predictive models in this project estimate a satisfaction score based on project attributes. A higher satisfaction score suggests better alignment with schedule and budget expectations. When interpreting the results:
+
+- **Linear Regression**: Provides an interpretable baseline, showing the strength and direction of relationships between features and satisfaction score. Use the coefficients to understand which factors most influence satisfaction.
+- **Random Forest**: Captures non-linear relationships and interactions. The feature importance plot highlights which attributes (e.g., budget variance, team size) most affect the score.
+
+By comparing model performance metrics (MAE, RMSE, R²), you can assess which model generalizes best to unseen data.
+
